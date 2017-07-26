@@ -25,5 +25,19 @@
             Assert.False(res);
         }
 
+        [Fact]
+        public void Check_an_unique_chars_array()
+        {
+            var str = new char[]
+            {
+                (char) 0x0000,
+                (char) 0x0020
+            };
+
+            var res = Exercise1.IsUniqueChar(str);
+
+            Assert.True(res);
+        }
+
     }
 }
