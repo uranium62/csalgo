@@ -10,7 +10,7 @@
                 return false;
             }
 
-            int[] checker = new int[2048];
+            uint[] checker = new uint[2048];
 
             for (int i = 0; i < str.Length; i++)
             {
@@ -21,7 +21,7 @@
                 {
                     return false;
                 }
-                checker[rnk] |= (1 << pos);
+                checker[rnk] |= (uint) (1 << pos);
             }
 
             return true;
@@ -35,7 +35,7 @@
                 return false;
             }
 
-            int[] checker = new int[2048];
+            uint[] checker = new uint[2048];
 
             for (int i = 0; i < str.Length; i++)
             {
@@ -46,7 +46,7 @@
                 {
                     return false;
                 }
-                checker[rnk] |= (1 << pos);
+                checker[rnk] |= (uint) (1 << pos);
             }
 
             return true;
