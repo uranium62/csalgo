@@ -9,16 +9,16 @@
             LinkedList<int> res = new LinkedList<int>();
             HashSet<int> checker = new HashSet<int>();
 
-            LinkedListNode<int> curr = lst.First;
+            LinkedListNode<int> cur = lst.First;
 
-            while (curr != null)
+            while (cur != null)
             {
-                if (!checker.Contains(curr.Value))
+                if (!checker.Contains(cur.Value))
                 {
-                    res.AddLast(curr.Value);
-                    checker.Add(curr.Value);
+                    res.AddLast(cur.Value);
+                    checker.Add(cur.Value);
                 }
-                curr = curr.Next;
+                cur = cur.Next;
             }
 
             return res;
