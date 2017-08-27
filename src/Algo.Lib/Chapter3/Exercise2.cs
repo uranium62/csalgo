@@ -11,7 +11,7 @@ namespace Algo.Lib.Chapter3
             _mins = new Stack<int>();
         }
 
-        public void Push(int value)
+        public void PushVal(int value)
         {
             if (value <= Min())
             {
@@ -20,7 +20,7 @@ namespace Algo.Lib.Chapter3
             base.Push(value);
         }
 
-        public int Pop()
+        public int PopVal()
         {
             var value = base.Pop();
 

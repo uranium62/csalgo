@@ -9,12 +9,12 @@ namespace Algo.Lib.Test.Chapter3
         public void Get_min_value_from_stack()
         {
             var stack = new StackMin();
-            stack.Push(3);
-            stack.Push(9);
-            stack.Push(1);
+            stack.PushVal(3);
+            stack.PushVal(9);
+            stack.PushVal(1);
 
             var min1 = stack.Min();
-            stack.Pop();
+            stack.PopVal();
             var min2 = stack.Min();
 
             Assert.Equal(min1, 1);
